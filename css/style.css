@@ -1,0 +1,465 @@
+*{
+	scroll-behavior: smooth;
+	padding: 0;
+	margin: 0;
+	font-family: 'Josefin Sans', sans-serif;
+	box-sizing: border-box;
+}
+.hero{
+	height: 100vh;
+	width: 100%;
+	background-color: #047eb3;
+	background-repeat: no-repeat;
+	background-size: 100vh;
+	background-position: right;
+}
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 45px;
+	padding-left: 8%;
+	padding-right: 8%;
+}
+.logo{
+	color: white;
+	font-size: 55px;
+	letter-spacing: 1px;
+	cursor: pointer;
+	margin-left:-16px;
+}
+span{
+	color: #00c8ff;
+}
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 10px  25px;
+}
+nav ul li a{
+	color: rgb(16, 107, 225);
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+
+.btn{
+	background-color:#cb1f56;
+	color: rgb(241, 242, 246);
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 10px 25px;
+	border-radius: 30px;
+	transition: transform .4s; 
+}
+.btn:hover{
+	background-color: #0078f9;
+	transition: 2s;
+	border: radius 20%;
+}
+.content{
+	display: flex;
+	position: relative;
+	top: 45%;
+	left:8%;
+	transform: translateY(-50%);
+}
+.content img{
+	align-items:left;
+	width: 50vh;
+	clip-path:circle();
+	margin-left: 50%;
+}
+h1{
+	color: rgb(255, 255, 255);
+	margin: 20px 0px 20px;
+	font-size: 75px;
+	margin-left:-16px;
+}
+h3{
+	color: white;
+	font-size: 25px;
+	margin-bottom: 50px;
+	margin-left:-16px;
+}
+h4{
+	color: rgba(255, 255, 255, 0.8);
+	letter-spacing: 4px;
+	font-size: 30px;
+	margin-top:5%;
+	margin-left:-16px;
+}
+.main{
+	width: 1130px;
+	max-width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.pro{
+	background: #b2f2ff;
+	width: 100%;
+	padding: 100px 0px;
+}
+.title h2{
+	color: rgb(0, 0, 0);
+	font-size: 75px;
+	width: 1130px;
+	margin: 30px auto;
+	text-align: center;
+}
+.box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 400px;
+}
+.card{
+	height:465px;
+	width: 335px;
+	padding: 20px 35px;
+	background: #000000;
+	border-radius: 20px;
+	margin: 15px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+.card i{
+	font-size: 50px;
+	display: block;
+	text-align: center;
+	margin: 25px 0px;
+	color: #f9004d;
+
+}
+h5{
+	color: white;
+	font-size: 23px;
+	margin-bottom: 15px;
+}
+.pra p{
+	color: #fcfc;
+	font-size: 16px;
+	line-height: 27px;
+	margin-bottom: 25px;
+}
+.card .button{
+	background-color:#f9004d;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 9px 22px;
+	border-radius: 30px;
+	transition: .4s; 
+}
+.card .button:hover{
+	background-color: transparent;
+	border: 2px solid #f9004d;
+	cursor: pointer;
+}
+.contact-me{
+	width: 100%;
+	height: 700px;
+	background: #ffffff;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+.contact-me p{
+	color: rgb(12, 12, 12);
+	font-size: 40px;
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+.contact-me .button-two{
+	background-color:#f9004d;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 12px 40px;
+	border-radius: 30px;
+	transition: .4s; 
+}
+.contact-me .button-two:hover{
+	background-color:black;
+	border: 2px solid #f9004d;
+	cursor: pointer;
+}
+footer{
+	position: relative;
+	width: 100%;
+	height: 400px;
+	background: #cccccc;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+footer p:nth-child(1){
+	font-size: 30px;
+	color: rgb(0, 0, 0);
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+footer p:nth-child(2){
+	color: rgb(0, 0, 0);
+	font-size: 17px;
+	width: 500px;
+	text-align: center;
+	line-height: 26px;
+}
+.social{
+	display: flex;
+}
+.social a{
+	width: 45px;
+	height: 45px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background:  #f9004d;
+	border-radius: 50%;
+	margin: 22px 10px;
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+}
+.social a:hover{
+	transform: scale(1.3);
+	transition: .3s;
+}
+.end{
+	position: absolute;
+	color:#f9004d;
+	bottom: 35px;
+	font-size: 14px; 
+}
+.car{
+	width: 100%;
+	background-color: #cacaca;
+	padding: 100px 200px;
+	
+
+}
+.car h2{
+	color: rgb(0, 0, 0);
+	font-size: 35px;
+	width: 1130px;
+	margin: 30px auto;
+	text-align: center;
+	
+}
+.car ul li{
+	list-style-type:square;
+	padding: 10px  25px;
+	font-size: 25px;
+}
+.process-wrapper {
+	margin:auto;
+	max-width:1080px;
+}
+
+#progress-bar-container {
+	position:relative;
+	width:90%;
+	margin:auto;
+	height:100px;
+	margin-top:65px;
+}
+
+#progress-bar-container ul {
+	padding:0;
+	margin:0;
+	padding-top:15px;
+	z-index:9999;
+	position:absolute;
+	width:100%;
+	margin-top:-40px
+}
+#progress-bar-container li {
+	list-style:none;
+	float:left;
+	width:20%;
+	text-align:center;
+	color:rgb(0, 0, 0);
+	text-transform:uppercase;
+	font-size:25px;
+	cursor:pointer;
+	font-weight:700;
+	transition:all ease 0.2s;
+	vertical-align:bottom;
+	height: 40px;
+	position:relative;
+}
+
+#progress-bar-container li .step-inner {
+	position:absolute;
+	width:100%;
+	bottom:0;
+    font-size: 14px;
+}
+#progress-bar-container li:after {
+	content:" ";
+	display:block;
+	width:6px;
+	height:6px;
+	background:#777;
+	margin:auto;
+	border:solid 7px #fff;
+	border-radius:50%;
+	margin-top:40px;
+	box-shadow:0 2px 13px -1px rgba(0,0,0,0.3);
+	transition:all ease 0.2s;
+     
+}
+
+#progress-bar-container li:hover:after {
+	background:rgb(255, 0, 0);
+}
+#progress-bar-container #line {
+	width:80%;
+	margin:auto;
+	background: rgb(141, 10, 10);
+	height:6px;
+	position:absolute;
+	left:10%;
+	top:57px;
+	z-index:1;
+	border-radius:50px;
+	transition:all ease 0.9s;
+}
+.cardi{
+	margin: 200px;
+	height:365px;
+	width: 335px;
+	padding: 20px 35px;
+	background: #738e03;
+	border-radius: 20px;
+	margin: 15px;
+	position: center;
+	overflow: hidden;
+	text-align: center;
+	text-decoration-color: #101010;
+}
+.boo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 410px;
+}
+.contact-me.skill-bars{
+	padding: 25px 30px;
+	width: 600px;
+	background: rgb(4, 137, 137);
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+	border-radius: 10px;
+  }
+  .skill-bars .bar{
+	margin: 20px 0;
+  }
+  .skill-bars .bar:first-child{
+	margin-top: 0px;
+  }
+  .skill-bars .bar .info{
+	margin-bottom: 5px;
+  }
+  .skill-bars .bar .info span{
+	font-weight: 500;
+	font-size: 17px;
+	opacity: 0;
+	animation: showText 0.5s 1s linear forwards;
+  }
+  @keyframes showText {
+	100%{
+	  opacity: 1;
+	}
+  }
+  .skill-bars .bar .progress-line{
+	height: 40px;
+	width: 350px;
+	background: #f0f0f0;
+	position: relative;
+	transform: scaleX(0);
+	transform-origin: left;
+	border-radius: 10px;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
+				0 1px rgba(255,255,255,0.8);
+	animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+  }
+  @keyframes animate {
+	100%{
+	  transform: scaleX(1);
+	}
+  }
+  .bar .progress-line span{
+	height: 100%;
+	position: absolute;
+	border-radius: 10px;
+	transform: scaleX(0);
+	transform-origin: left;
+	background: #e10e0e;
+	animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+  }
+  .bar .progress-line.html span{
+	width: 90%;
+  }
+  .bar .progress-line.css span{
+	width: 70%;
+  }
+  .bar .progress-line.JavaScript span{
+	width: 60%;
+  }
+  .bar .progress-line.python span{
+	width: 50%;
+  }
+  .progress-line span::before{
+	position: absolute;
+	content: "";
+	top: -10px;
+	right: 0;
+	height: 0;
+	width: 0;
+	border: 7px solid transparent;
+	border-bottom-width: 0px;
+	border-right-width: 0px;
+	border-top-color: rgb(237, 201, 201);
+	opacity: 0;
+	animation: showText2 0.5s 1.5s linear forwards;
+  }
+  .progress-line span::after{
+	position: absolute;
+	top: -28px;
+	right: 0;
+	font-weight: 500;
+	background: rgb(58, 9, 174);
+	color: #fff;
+	padding: 1px 8px;
+	font-size: 12px;
+	border-radius: 3px;
+	opacity: 0;
+	animation: showText2 0.5s 1.5s linear forwards;
+  }
+  @keyframes showText2 {
+	100%{
+	  opacity: 1;
+	}
+  }
+  .progress-line.html span::after{
+	content: "90%";
+  }
+  .progress-line.css span::after{
+	content: "70%";
+  }
+  .progress-line.JavaScript span::after{
+	content: "60%";
+  }
+  .progress-line.python span::after{
+	content: "50%";
+  }
+ 
